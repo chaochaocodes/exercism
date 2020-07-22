@@ -4,6 +4,8 @@
 //
 
 export const colorCode = (color) => {
+
+  // 1. Encoded colors as an object
   // let colors = {
   //   "black": 0,
   //   "brown": 1,
@@ -16,12 +18,16 @@ export const colorCode = (color) => {
   //   "grey": 8,
   //   "white": 9
   // }
-  
   //   return (color in colors ) ? colors[color] : Object.keys(colors)
   
-  for (let i = 0; i < COLORS.length; i++) {
-    if (COLORS[i] === color) return i
-  }
+  // 2. Looping over array of colors
+  // for (let i = 0; i < COLORS.length; i++) {
+  //   if (COLORS[i] === color) return i
+  // }
+
+  // 3. indexOf
+  return COLORS.indexOf(color)
+
 
 };
 
