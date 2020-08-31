@@ -10,6 +10,6 @@ export const decodedValue = (array) => {
 
   twoDigit.push(COLORS.indexOf(array[0]))
   twoDigit.push(COLORS.indexOf(array[1]))
-  return parseInt(twoDigit.join(''))
+  return Number(twoDigit)
 
 };
